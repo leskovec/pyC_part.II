@@ -1,3 +1,5 @@
+
+
 #include "lib.h"
 #include <iostream>
 
@@ -10,12 +12,16 @@ int main(int argc, char* argv[]){
     }
 
     int n = atoi(argv[1]);
-    std::cout<< "computing eigenvalues of a " << n << "x" << n << " matrix" << std::endl;
+    std::cout<< "computing eigenvalues of a " 
+             << n << "x" << n << " matrix" 
+             << std::endl;
     result r = get_my_eigvals(n);
     std::cout << "eigenvalues: ";
     for(int i=0; i<n; ++i){
-      std::cout<< r.eigval[i];
+      std::cout<< r.eigval[i] << " ";
     } 
     std::cout << std::endl;
     return 0;
 }
+
+

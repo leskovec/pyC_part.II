@@ -1,3 +1,5 @@
+
+
 cmake_minimum_required(VERSION 3.20)
 project(GSLandEigen)
 
@@ -27,7 +29,7 @@ target_include_directories(main.exe PUBLIC
                         GSL::gsl GSL::gslcblas)
 
 # install the executable
-install(TARGETS main.exe RUNTIME DESTINATION bin)
+install(TARGETS main.exe RUNTIME DESTINATION bin3)
 
 
 # add the Pybind11 module
@@ -39,3 +41,5 @@ target_link_libraries(eigvals PRIVATE lib pybind11::module Eigen3::Eigen GSL::gs
 # install the plot module to the install path
 # install(TARGETS module LIBRARY DESTINATION module)
 install(TARGETS eigvals DESTINATION ${CMAKE_INSTALL_PREFIX}/pymodule)
+
+

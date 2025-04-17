@@ -1,6 +1,6 @@
+
+
 #include "lib.h"
-
-
 
 
 result get_my_eigvals(const int n){
@@ -42,3 +42,6 @@ result get_my_eigvals(const int n){
 
     return res;
 }
+
+
+
